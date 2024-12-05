@@ -54,3 +54,16 @@ const object2 = {
     address: "Tashkent"
 };
 console.log(object2);
+const person2 = {
+    name: "Olim",
+    age: 44,
+    isMarried: false,
+    address: "Tashkent"
+};
+// person2.name = "Qulpiniso" BU XOLAT NOTOGRI CHUNKI READONLY QILGANDAN SONG QIYAMATNI OZGARTIRIB BOLMAYDI
+console.log(person2);
+// 10. Type Assertions (Turga oid aniqlashlar)
+// Task: Type assertion yordamida TypeScriptga ma'lum bir turga ega bo'lgan o'zgaruvchini ko'rsatish.
+// Misol:
+let obj = { name: "olim" };
+obj();
