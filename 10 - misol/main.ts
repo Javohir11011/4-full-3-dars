@@ -4,6 +4,8 @@
 // undan foydalaning.
 // Misol:
 
+import { func } from "joi";
+
 const arr : Array<number | string> = [1,"salom", "alik"]
 console.log(arr);
 
@@ -38,3 +40,36 @@ console.log(fullInfo);
 
 let mix : string | number | boolean  = 5 // true or "salom" bersa ishlaydi
 console.log(mix);
+
+
+// 5. Function (Funktsiya)
+// Task: TypeScriptda funksiya yaratib, uning parametr va qaytish turini aniqlang. 
+// Misol: ikkita raqamni qo'shadigan funksiya.
+// Misol:
+
+function add(a:number, b:number):number{
+    return a + b
+}
+
+console.log(add(1, 5));
+
+
+
+// 6. Literal Type (Literal tur)
+// Task: Literal turidan foydalanib, faqat muayyan 
+// qiymatlarni qabul qiladigan o'zgaruvchi yaratish.
+// Misol:
+
+const str = "Salom dunyo"
+const len = str.length
+const sp = str.split(' ')
+console.log(`len : ${len}`);
+console.log(sp);
+console.log(`str: ${str}`);
+
+
+// 7. Object Type (Obyekt turi)
+// Task: Object turidan foydalanib, ma'lum bir tuzilishga ega obyekt yaratib, 
+//uning xususiyatlarini aniqlang.
+// Misol:
+
