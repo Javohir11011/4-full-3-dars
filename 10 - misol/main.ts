@@ -89,3 +89,24 @@ const object : obj = {
 
 
 console.log(object);
+
+
+
+// 8. Optional Properties (Ixtiyoriy xususiyatlar)
+// Task: Ixtiyoriy xususiyatlarni aniqlang va obyekt yaratishda ba'zi xususiyatlarni o'tkazib yuboring.
+// Misol:
+type obj2 = {
+    name : string,
+    age? : number,
+    address : string,
+    isMerried ? : boolean
+}
+
+
+const object2 : obj2 = {
+    name : "Olim",
+    address : "Tashkent"
+}
+
+
+console.log(object2);

@@ -49,3 +49,8 @@ const object = {
     address: "Tashkent"
 };
 console.log(object);
+const object2 = {
+    name: "Olim",
+    address: "Tashkent"
+};
+console.log(object2);
