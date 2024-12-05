@@ -4,6 +4,7 @@
 // Misol: faqat string va number turidagi elementlardan iborat massiv yaratib, 
 // undan foydalaning.
 // Misol:
+Object.defineProperty(exports, "__esModule", { value: true });
 const arr = [1, "salom", "alik"];
 console.log(arr);
 // 2. Tuple (Kuple)
@@ -22,5 +23,23 @@ console.log(fullInfo);
 // Task: Union turidan foydalanib, bir o'zgaruvchiga bir nechta turdagi qiymatlarni qabul 
 // qilishini ta'minlang. Masalan, o'zgaruvchi raqam yoki matn bo'lishi mumkin.
 // Misol:
-let mix = 5;
+let mix = 5; // true or "salom" bersa ishlaydi
 console.log(mix);
+// 5. Function (Funktsiya)
+// Task: TypeScriptda funksiya yaratib, uning parametr va qaytish turini aniqlang. 
+// Misol: ikkita raqamni qo'shadigan funksiya.
+// Misol:
+function add(a, b) {
+    return a + b;
+}
+console.log(add(1, 5));
+// 6. Literal Type (Literal tur)
+// Task: Literal turidan foydalanib, faqat muayyan 
+// qiymatlarni qabul qiladigan o'zgaruvchi yaratish.
+// Misol:
+const str = "Salom dunyo";
+const len = str.length;
+const sp = str.split(' ');
+console.log(`len : ${len}`);
+console.log(sp);
+console.log(`str: ${str}`);
