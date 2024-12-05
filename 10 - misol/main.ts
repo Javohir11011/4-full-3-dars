@@ -4,7 +4,7 @@
 // undan foydalaning.
 // Misol:
 
-import { func } from "joi";
+import { boolean, func, number, string } from "joi";
 
 const arr : Array<number | string> = [1,"salom", "alik"]
 console.log(arr);
@@ -89,3 +89,59 @@ const object : obj = {
 
 
 console.log(object);
+
+
+
+// 8. Optional Properties (Ixtiyoriy xususiyatlar)
+// Task: Ixtiyoriy xususiyatlarni aniqlang va obyekt yaratishda ba'zi xususiyatlarni o'tkazib yuboring.
+// Misol:
+type obj2 = {
+    name : string,
+    age? : number,
+    address : string,
+    isMerried ? : boolean
+}
+
+
+const object2 : obj2 = {
+    name : "Olim",
+    address : "Tashkent"
+}
+
+console.log(object2);
+
+
+
+// 9. Readonly (Faoliyatni o'zgartirish mumkin bo'lmagan xususiyatlar)
+// Task: readonly modifier yordamida faqat o'qiladigan (o'zgartirilmaydigan) xususiyatlarga ega obyekt yaratish.
+// Misol:
+
+
+type readonlyS = {
+    readonly name :string,
+    age :number,
+    readonly isMarried:boolean,
+    address :string
+}
+
+const person2 : readonlyS={
+    name : "Olim",
+    age : 44,
+    isMarried : false,
+    address  :"Tashkent"
+}
+
+// person2.name = "Qulpiniso" BU XOLAT NOTOGRI CHUNKI READONLY QILGANDAN SONG QIYAMATNI OZGARTIRIB BOLMAYDI
+
+
+console.log(person2);
+
+
+
+// 10. Type Assertions (Turga oid aniqlashlar)
+// Task: Type assertion yordamida TypeScriptga ma'lum bir turga ega bo'lgan o'zgaruvchini ko'rsatish.
+// Misol:
+
+let obj :any = {name : "olim"}
+
+
