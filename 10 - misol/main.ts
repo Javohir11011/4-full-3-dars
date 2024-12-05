@@ -73,3 +73,19 @@ console.log(`str: ${str}`);
 //uning xususiyatlarini aniqlang.
 // Misol:
 
+type obj = {
+    name : string,
+    age : number,
+    address : string,
+    isMerried ? : boolean
+}
+
+
+const object : obj = {
+    name : "Olim",
+    age : 33,
+    address : "Tashkent"
+}
+
+
+console.log(object);

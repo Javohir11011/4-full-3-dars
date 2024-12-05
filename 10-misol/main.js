@@ -43,3 +43,9 @@ const sp = str.split(' ');
 console.log(`len : ${len}`);
 console.log(sp);
 console.log(`str: ${str}`);
+const object = {
+    name: "Olim",
+    age: 33,
+    address: "Tashkent"
+};
+console.log(object);
