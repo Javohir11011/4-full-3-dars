@@ -66,4 +66,3 @@ console.log(person2);
 // Task: Type assertion yordamida TypeScriptga ma'lum bir turga ega bo'lgan o'zgaruvchini ko'rsatish.
 // Misol:
 let obj = { name: "olim" };
-obj();

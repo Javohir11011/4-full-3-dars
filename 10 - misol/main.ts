@@ -143,5 +143,3 @@ console.log(person2);
 // Misol:
 
 let obj :any = {name : "olim"}
-
-
